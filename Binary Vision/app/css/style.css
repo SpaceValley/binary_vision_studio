@@ -1,0 +1,885 @@
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding-right: -15px;
+    padding-left: -15px;
+}
+
+.header__titleWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vw;
+}
+
+.header {
+    background-image: linear-gradient(to left, #134469, #0f1529);
+    height: 50vw;
+}
+
+.looperLogo {
+    z-index: 2;
+    width: 80%;
+}
+
+.subtitleText {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.looperInfoWrap {
+    padding-top: 8.7%;
+}
+
+.looperInfoTitle, .assignmentInfoTitle, .brandIdentityInfoTitle {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: right;
+    color: #0f1529;
+    position: relative;
+}
+
+.looperInfoTitle {
+    text-align: right;
+}
+
+.titleLine, .assignmentLine {
+    width: 12px;
+    height: 2px;
+    background: #ff6970;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.assignmentLine {
+    right: 0;
+}
+
+.looperInfo, .assignmentInfo, .brandIdentityInfo, .brandIdentityBookInfo {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    color: #ff6970;
+}
+
+.launchProjectBtn {
+    width: 180px;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    color: #0f1529;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.launchProjectLine {
+    width: 31px;
+    height: 2px;
+    background: #ff6970;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+.phoneImgRow {
+    padding: 0;
+}
+
+.phoneFirstImg {
+}
+
+.phoneSecondImg {
+    bottom: 5%;
+}
+
+.phoneFirstImg, .phoneSecondImg, .phoneThirdImg {
+    padding: 0;
+}
+
+.assignmentInfoWrap {
+    padding-top: 11.7%;
+}
+
+.assignmentInfoTitle {
+    width: unset;
+    text-align: right;
+}
+
+.assignmentLine {
+    background: #1db0f9;
+    right: -20px;
+}
+
+.assignmentInfo {
+    color: #0f1529;
+}
+
+.deliverablesTitleWrap {
+    padding-top: 80px;
+}
+
+.deliverablesTitle, .deliverablesInfo {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0f1529;
+}
+
+.deliverablesTitleContent {
+    position: relative;
+    text-align: center;
+}
+
+.deliverablesTitle {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background: white;
+}
+
+.deliverabesTitleLine {
+    height: 2px;
+    width: 100%;
+    background: #e5ebef;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 50%;
+    transform: rotateY(-50%);
+}
+
+.deliverablesInfoWrap {
+    padding-top: 50px;
+}
+
+.deliverablesInfoCenter {
+    text-align: center;
+    border-left: 1px solid #e5ebef;
+    border-right: 1px solid #e5ebef;
+}
+
+.deliverablesInfo {
+    width: 100px;
+    padding-right: 2em;
+}
+
+.deliverablesDetails {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: right;
+    color: #0f1529;
+}
+
+.deliverablesInfoLine {
+    width: 2px;
+    height: 45px;
+    background: #e5ebef;
+    margin: 0;
+}
+
+.typographyWrap {
+    margin-top: 18%;
+    background: #e5ebef;
+}
+
+.typographyTitleWrap {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(270deg);
+    position: absolute;
+}
+
+.typographyTitleLine, .colorPaletteTitleLine, .brandIdentityBookTitleLine, .mobileAppLine {
+    height: 2px;
+    background: #0f1529;
+    position: relative;
+    top: 2vw;
+}
+
+.brandIdentityBookTitleLine {
+    background: white;
+}
+
+.typographyTitle, .colorPaletteTitle, .brandIdentityBookTitle, .mobileAppTitle {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #0f1529;
+    text-transform: uppercase;
+}
+
+.typographySubTitle, .colorPaletteSubTitle, .brandIdentityBookSubTitle, .mobileAppSubTitle {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #0f1529;
+}
+
+.brandIdentityBookSubTitle, .brandIdentityBookTitle {
+    color: white;
+}
+
+.typographyInfoWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-bottom: 85px;
+}
+
+.articleInfo, .mobileAppInfo {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    color: #0f1529;
+    padding-top: 70px;
+}
+
+.articleTitleBold {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 200px;
+}
+
+.articleTitleLight {
+    font-family: Gotham, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.articleSubTitle {
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    color: #0f1529;
+    position: absolute;
+    top: 50px;
+    right: -30px;
+    text-transform: lowercase;
+}
+
+.brandIdentityWrap {
+    padding-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brandIdentityInfo {
+    width: 40.2%;
+}
+
+.colorPaletteWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.colorPaletteTitleWrap {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.colorLabel {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #0f1529;
+    position: relative;
+    left: 15px;
+}
+
+.blackColor {
+    background-color: #0f1529;
+}
+
+.grayColor {
+    background-color: #e5ebef;
+}
+
+.blueColor {
+    background-color: #1db0f9;
+}
+
+.redColor {
+    background-color: #ff6970;
+}
+
+.colorBlocksWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.colorBlocksWrapBlue, .colorBlocksWrapRed, .colorBlocksWrapBlack, .colorBlocksWrapGray {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.colorBlocksWrapGray {
+    position: relative;
+    right: 15px;
+}
+
+.colorBlocksWrapRed {
+    position: relative;
+    bottom: 25px;
+}
+
+.pageMiddleLine {
+    width: 4vw;
+    height: 2279px;
+    background-color: #0f1529;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.uxDesignWrap {
+    padding-top: 16.7%;
+    position: relative;
+}
+
+.brandingWrap {
+    padding-top: 10%;
+}
+
+.referralWrap {
+    padding-top: 13.4%;
+}
+
+.uxDesignBgImg, .referralBgImg, .brandingBgImg {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.uxDesignPhoneImg, .brandingPhoneImg, .referralPhoneImg {
+    z-index: 1;
+    position: absolute;
+    left: 27vw;
+    width: 100%;
+}
+
+.brandingPhoneImg {
+    height: 85%;
+    left: unset;
+    right: 42vw;
+}
+
+.uxDesignInfo, .brandingInfo, .referralInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uxDesignTitle, .brandingTitle, .referralTitle {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+}
+
+.uxDesignText, .brandingText, .referralText {
+    padding-top: 5px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: #0f1529;
+}
+
+.brandIdentityBookWrap {
+    padding-top: 26vw;
+}
+
+.brandIdentityBookBg {
+    background-image: linear-gradient(to top, #14557f, #0f1529);
+    padding-bottom: 5%;
+}
+
+
+
+.brandIdentityBookInfo {
+    color: white;
+    padding-top: 11vw;
+    font-weight: lighter;
+}
+
+.brandIdentityBookImg {
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.mobileAppWrap {
+    margin-top: 10vw;
+    position: relative;
+}
+
+.mobileAppImgBg {
+    height: 72vw;
+    padding: 0;
+}
+
+.blueText {
+    color: #1db0f9;
+}
+
+.webPlatformWrap {
+    position: relative;
+    margin-top: 17vw;
+}
+
+.webPlatformTitleWrap,brandIdentityBookTitleWrap, .mobileAppTitleWrap {
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+
+}
+
+.webPlatformBg {
+    padding: 0;
+    margin-top: 5vw;
+    height: 158vw;
+    z-index: 2;
+}
+
+.webPlatformDarkBg {
+    position: absolute;
+    height: 26vw;
+    background-color: #0f1529;
+    z-index: 1;
+    top: 100.2vw;
+}
+
+.binaryBuiltLabel {
+    margin-top: 14vw;
+    text-align: center;
+}
+
+footer {
+    background: #f9f9f9;
+    margin-top: 2vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+}
+
+.hireUsBtn {
+    width: 6vw;
+    height: 2vw;
+    font-family: Montserrat, sans-serif;
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0f1529;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.footerLabel {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0px;
+    color: #0f1529;
+}
+
+.fab {
+    opacity: 0.9;
+    color: #0f1529;
+}
+
+.iconWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 320px) {
+    .subtitleText {
+        font-size: 7px;
+    }
+
+    .header__titleWrap {
+        padding-top: 8vw;
+    }
+
+    .looperInfoTitle, .assignmentInfoTitle, .brandIdentityInfoTitle,
+    .deliverablesTitle, .deliverablesInfo, .deliverablesDetails,
+    .typographySubTitle, .colorPaletteSubTitle, .mobileAppSubTitle {
+        font-size: 13px;
+    }
+
+    .looperInfo, .assignmentInfo, .brandIdentityInfo,
+    .typographyTitle, .colorPaletteTitle, .uxDesignTitle,
+    .brandingTitle, .referralTitle, .brandIdentityBookSubTitle,
+    .brandIdentityBookTitle, .brandIdentityBookInfo, .mobileAppInfo, .mobileAppTitle {
+        font-size: 4vw;
+    }
+
+    .articleInfo, .articleSubTitle, .colorLabel {
+        font-size: 10px;
+    }
+
+    .deliverabesTitleLine, .titleLine, .assignmentLine {
+        top: calc(50% - 1px);
+    }
+
+    .deliverablesInfo, .deliverablesDetails {
+        text-align: center;
+    }
+
+    .typographyTitleLine, .colorPaletteTitleLine, .brandIdentityBookTitleLine, .mobileAppLine {
+        width: 20px;
+    }
+
+    .titleLine {
+        top: 0.5em;
+        right: -21px;
+    }
+
+    .articleTitleLight, .articleTitleBold {
+        font-size: 20px;
+    }
+
+    .typographyInfoWrap {
+        padding-top: 120px;
+    }
+
+    .blackColor, .blueColor {
+        width: 50px;
+        height: 50px;
+    }
+
+    .grayColor, .redColor {
+        width: 25px;
+        height: 25px;
+    }
+
+    .colorPaletteTitleWrap {
+        top: 30px;
+        right: 0;
+    }
+
+    .uxDesignText, .brandingText, .referralText {
+        font-size: 8px;
+    }
+
+    .phoneImgRow {
+        height: 33.5vw;
+    }
+
+    .referralPhoneImg {
+        height: 40vw;
+    }
+
+    .uxDesignPhoneImg {
+        height: 68%;
+    }
+
+    .footerLabel {
+        font-size: 2vw;
+    }
+
+    .fab {
+        font-size: 3vw;
+    }
+    .webPlatformTitleWrap{
+        margin-bottom: 8vw;
+        text-align: center;
+    }
+    .brandIdentityBookTitleWrap, .mobileAppTitleWrap {
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 420px) {
+    .subtitleText {
+        font-size: 9px;
+    }
+
+    .header__titleWrap {
+        padding-top: 10vw;
+    }
+
+    .typographyTitleLine, .colorPaletteTitleLine, .brandIdentityBookTitleLine, .mobileAppLine {
+        margin-right: 10px;
+    }
+    .referralPhoneImg {
+        height: 80%;
+    }
+    .uxDesignPhoneImg {
+        height: 77%;
+    }
+
+}
+
+@media screen and (min-width: 526px) {
+    .subtitleText {
+        font-size: 11px;
+    }
+
+    .header__titleWrap {
+        padding-top: 15vw;
+    }
+
+    .looperInfoTitle, .assignmentInfoTitle, .brandIdentityInfoTitle {
+        font-size: 20px;
+    }
+
+    .colorPaletteTitleWrap {
+        top: 50px;
+        right: 50px;
+    }
+
+    .colorBlocksWrapRed {
+        left: 25px;
+    }
+
+    .brandIdentityBookImagesWrap .row {
+        margin-top: 7%;
+    }
+
+    .brandIdentityBookImg {
+        margin-top: 0;
+        -webkit-box-shadow: 0px -70px 100px -70px rgba(0, 0, 0, 0.67), 0px 70px 100px -70px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0px -70px 100px -70px rgba(0, 0, 0, 0.67), 0px 70px 100px -70px rgba(0, 0, 0, 0.67);
+        -o-box-shadow: 0px -70px 100px -70px rgba(0, 0, 0, 0.67), 0px 70px 100px -70px rgba(0, 0, 0, 0.67);
+        box-shadow: 0px -70px 100px -70px rgba(0, 0, 0, 0.67), 0px 70px 100px -70px rgba(0, 0, 0, 0.67);
+    }
+
+    .leftCol .brandIdentityBookImg {
+        position: absolute;
+        top: 50%;
+    }
+
+    /* .leftCol:before{ */
+    /*   content: ''; */
+    /*   height: 50%; */
+    /*   display: block; */
+    /* } */
+    .looperInfo, .assignmentInfo, .brandIdentityInfo,
+    .typographyTitle, .colorPaletteTitle, .uxDesignTitle,
+    .brandingTitle, .referralTitle, .brandIdentityBookSubTitle,
+    .brandIdentityBookTitle, .brandIdentityBookInfo, .mobileAppInfo, .mobileAppTitle {
+        font-size: 2vw;
+    }
+
+
+    .footerLabel {
+        font-size: 1vw;
+    }
+
+    .fab {
+        font-size: 2vw;
+    }
+    .webPlatformTitleWrap{
+        transform: rotate(90deg);
+        position: absolute;
+        text-align: unset;
+        margin-bottom: unset;
+        top: 40vw;
+        left: 57vw;
+    }
+    .brandIdentityBookTitleWrap, .mobileAppTitleWrap {
+        transform: rotate(270deg);
+        position: absolute;
+        text-align: unset;
+        margin-top: unset;
+    }
+    .brandIdentityBookTitleWrap{
+        left: -30vw;
+
+    }
+    .mobileAppTitleWrap{
+        left: -20vw;
+        top: 25vw;
+    }
+    .brandIdentityBookTitleLine{
+        margin-left: -6vw;
+    }
+
+}
+
+@media screen and (min-width: 670px) {
+    .subtitleText {
+        font-size: 13px;
+    }
+
+    .articleTitleLight, .articleTitleBold {
+        font-size: 35px;
+    }
+
+    .articleInfo, .articleSubTitle, .uxDesignText, .brandingText, .referralText {
+        font-size: 15px;
+    }
+
+    .deliverablesInfoLeft {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .subtitleText {
+        font-size: 15px;
+    }
+
+    .looperInfoTitle, .assignmentInfoTitle, .brandIdentityInfoTitle {
+        font-size: 25px;
+    }
+
+    .looperInfo, .assignmentInfo, .brandIdentityInfo,
+    .deliverablesTitle, .deliverablesInfo, .deliverablesDetails,
+    .uxDesignTitle, .brandingTitle, .referralTitle,
+    .brandIdentityBookInfo, .mobileAppInfo {
+        font-size: 1.5vw;
+    }
+
+
+    .blackColor, .blueColor {
+        width: 95px;
+        height: 95px;
+    }
+
+    .grayColor, .redColor {
+        width: 48px;
+        height: 48px;
+    }
+
+    .colorLabel {
+        font-size: 15px;
+    }
+    .brandIdentityBookTitleWrap{
+        top: -11vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .subtitleText {
+        font-size: 20px;
+    }
+
+    .colorPaletteTitleWrap {
+        top: 75px;
+        right: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .webPlatformTitleWrap {
+        top: 20vw;
+        left: 74vw;
+    }
+    .mobileAppTitleWrap{
+        left: -14vw;
+        top: 20vw;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .subtitleText, .looperInfo, .assignmentInfo, .brandIdentityInfo, .brandIdentityBookInfo {
+        font-size: 1.11vw;
+    }
+
+    .typographyTitleLine, .colorPaletteTitleLine, .brandIdentityBookTitleLine {
+        margin-right: 40px;
+    }
+
+    .uxDesignTitle, .brandingTitle, .referralTitle {
+        font-size: 30px;
+    }
+
+    .typographyTitleLine, .colorPaletteTitleLine, .brandIdentityBookTitleLine,.mobileAppLine{
+        width: 72px;
+    }
+    .brandIdentityBookTitleLine{
+        margin-left: -10vw;
+    }
+
+}
+
+@media screen and (min-width: 1150px) {
+
+    .subtitleText, .looperInfo, .assignmentInfo,
+    .brandIdentityInfo, .deliverablesTitle, .deliverablesInfo,
+    .deliverablesDetails, .uxDesignText, .brandingText,
+    .referralText, .brandIdentityBookInfo, .mobileAppInfo {
+        font-size: 1.11vw;
+    }
+
+    .blackColor, .blueColor {
+        width: 189px;
+        height: 189px;
+    }
+
+    .grayColor, .redColor {
+        width: 96px;
+        height: 96px;
+    }
+
+    .colorLabel {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .subtitleText {
+        font-size: 20px;
+    }
+
+    .deliverablesInfoLeft,
+    .deliverablesInfoRight {
+        text-align: center;
+    }
+    .typographyTitle, .colorPaletteTitle, .brandIdentityBookTitle, .mobileAppTitle {
+        font-size: 40px;
+    }
+    .typographySubTitle, .colorPaletteSubTitle, .brandIdentityBookSubTitle, .mobileAppSubTitle {
+        font-size: 25px;
+    }
+    .mobileAppTitleWrap{
+        left: -17vw;
+        top: 10vw;
+    }
+}
+
+
