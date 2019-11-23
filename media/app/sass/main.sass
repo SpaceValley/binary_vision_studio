@@ -1,0 +1,377 @@
+@import './libs'
+@import './vars'
+
+html,body
+  overflow-x: hidden
+
+.header
+  background: $dark-blue-gray
+  width: 100%
+  position: relative
+  height: 60.6vw
+  padding: 4.6vw 11vw 0 11vw
+  &__cornerImgWrap
+    position: absolute
+    &-topLeft
+      height: 21.5vw
+      width: 16.15vw
+      top: 0
+      left: 0
+    &-topRight
+      height: 20.4vw
+      width: 25.4vw
+      top: 0
+      right: 0
+    &-bottomLeft
+      height: 22.4vw
+      width: 14.6vw
+      bottom: -5.5vw
+      left: 0
+    &-bottomRight
+      height: 16.85vw
+      width: 17.25vw
+      bottom: -6.3vw
+      right: 0
+  &__cornerImg
+    width: 100%
+    height: auto
+  &__logo
+    background: url("../img/group-4.svg")no-repeat
+    height: 47px
+    background-size: 19vw
+  &__mainImg
+    width: 100%
+    height: auto
+  &__title
+    font-family: $poppins
+    font-size: 4vw
+    font-weight: 200
+    color: #ffe600
+    margin: 0 4.6vw 0 0
+
+  &__subtitle
+    font-family: $mont
+    font-size: 4vw
+    font-weight: bold
+    color: white
+    margin: 0
+
+  &__scrollWrap
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    cursor: pointer
+  &__bottomLabel
+    font-family: $poppins
+    font-weight: 300
+    color: #f7f6f3
+    margin: 0
+    text-decoration: none
+.arrow
+  position: absolute
+  padding: 1vw
+  height: 8vw
+
+.header__bottomLabel:hover, .header__bottomLabel:active
+  color: #ffe600
+
+.header__bottomLabel
+  transition: all .25s linear
+
+.arrowWrap
+  position: relative
+
+.arrow:before
+  content: ""
+  background: #ffe600
+  position: absolute
+  top: 0
+  right: 1vw
+  transition: all 0.3s ease
+
+.arrow:after
+  content: ""
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 3px 0 3px 3px
+  border-color: transparent transparent transparent #ffe600
+  position: absolute
+  transition: all 0.3s ease
+  transform: rotate(90deg)
+
+.header__scrollWrap:hover .arrow::before
+  height: 11vw
+.header__scrollWrap:hover .arrow::after
+  top: 10.7vw
+.header__scrollWrap:hover .header__bottomLabel
+  color: #ffe600
+.about
+  &__title
+    font-size: 4.8vw
+    font-family: $mont
+    font-weight: bold
+    text-align: center
+    letter-spacing: -0.8px
+    color: $dark-blue-gray
+    margin-bottom: 0
+    margin-top: 11.4vw
+    line-height: 1.09
+
+  &__subtitle
+    font-family: $poppins
+    color: $dark-blue-gray
+    text-align: center
+    margin-top: 1.45vw
+    margin-bottom: 6.7vw
+    line-height: 1.5
+  &__getGuideWrap
+    background: url("../img/rectangle-2.png") no-repeat
+    background-size: 100vw
+    height: 42.5vw
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__formWrap
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    margin-left: 5vw
+  &__formTitle
+    font-family: $mont
+    text-align: center
+    color: #0f1529
+    margin: 0
+  &__formSubtitle,&__emailField
+    font-family: $poppins
+    font-weight: 200
+    line-height: 1.5
+    text-align: center
+    color: #191847
+  &__emailField
+    text-align: left
+    border: none
+    border-radius: 11px
+  &__getGuideBtn
+    font-family: $poppins
+    font-weight: 300
+    text-align: center
+    color: white
+    border: none
+    border-radius: 4.6px
+    background: $dark-blue-gray
+    cursor: pointer
+  &__emailResult
+    position: absolute
+    font-family: $mont
+    top: 11.5vw
+    right: 0.7vw
+
+#mc-embedded-subscribe-form
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.articles
+  position: relative
+  overflow-x: hidden
+  &__title
+    opacity: 0.3
+    font-family: $mont
+    font-weight: 800
+    color: #191847
+    text-align: right
+    &-inst
+      line-height: 0.57
+      text-align: center
+      margin-bottom: -6.7vw
+      margin-top: 4vw
+      margin-left: -2vw
+  &__sliderWrap
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+
+  &__sliderWrapBlock
+    display: flex
+    justify-content: center
+    align-items: center
+  &__sliderCardWrap
+    position: relative
+    &:hover
+      .articles__img
+        box-shadow: 0 22px 89px rgba(0,0,0,0.5)
+        z-index: 200
+  &__sliderCard
+    perspective: 1000px
+    width: 100%
+    height: 100%
+  &__row
+    display: flex
+    flex-direction: row
+    &-first
+      align-items: flex-end
+    &-second
+      align-items: flex-start
+  &__img
+    background: #0e1529
+    width: 100%
+    height: 100%
+  &__sliderCardInner
+    margin: .5vw
+    position: relative
+    width: 100%
+    height: 100%
+    text-align: center
+    transition: all 1s
+    background-color: aqua
+    font-family: $poppins
+
+
+.sliderWrap
+  display: flex
+  padding: 35px 0 70px 0
+
+
+
+.articles__sliderCard:hover .articles__sliderCardInner
+  .front-face
+    opacity: 0
+  .back-face
+    opacity: 1
+
+
+#container
+  width: 100%
+  overflow: visible
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  overflow-y: hidden
+
+
+#thumbs
+  position: absolute
+  height: 100%
+  width: auto
+
+#mobile-slider
+  display: none
+
+.designs
+  display: flex
+  span
+    display: inline-block
+    min-width: 20px
+  &__infoWrap
+  &__title
+    font-family: $mont
+    font-weight: 800
+    line-height: 1.03
+    color: #191847
+    margin: 0
+    transition: all 3s
+    width: 44vw
+    font-size: 4vw
+  &__subtitle
+    font-family: $poppins
+    color: #191847
+    font-weight: 300
+    font-size: 1.25rem
+    margin-top: 1.1vw
+  &__button
+    font-family: $poppins
+    font-weight: 200
+    text-align: center
+    font-size: 1.25rem
+    color: white
+    border: none
+    border-radius: 2.3px
+    background: $dark-blue-gray
+    cursor: pointer
+    transition: background-color .5s linear
+  &__img
+    width: 85%
+    height: auto
+    padding: 0
+    float: right
+
+.footer
+  background: $dark-blue-gray
+  width: 100%
+  display: flex
+  flex-direction: column
+  &__textWrap
+    display: flex
+    justify-content: space-between
+  &__subtitleWrap
+    display: flex
+    flex-direction: column
+  &__title, &__subtitle, &__smallFont
+    font-family: $poppins
+    font-weight: 200
+    color: white
+    &-small
+    &-larger
+      line-height: 1.3
+      opacity: 0.8
+  &__title
+    margin: 0
+    line-height: 1.4
+  &__smallFont
+    font-weight: bold
+    &-contact
+      font-weight: 200
+    &-rights
+      margin-bottom: 0
+      font-weight: 200
+  &__contactPhoneIcon
+    transform: rotate(90deg)
+  &__icon
+    color: white
+    cursor: pointer
+
+    
+.offsetItem
+  padding-right: 50vw
+
+@import './media'
+#thumbs
+  position: absolute
+  height: 100%
+  width: auto
+  
+#container
+  width: 100%
+  overflow: visible
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  
+#thumbs
+  overflow: auto
+  width: 100%
+  height: auto
+  padding: 0
+  
+
+.sliderWrap
+  display: flex
+  padding: 35px 0 70px 0
+
+
+.articles__sliderWrapBlock
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.articles__sliderCardInner
+  display: flex
+  background-color: transparent
+
