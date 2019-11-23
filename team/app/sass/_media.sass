@@ -1,0 +1,327 @@
+@import 'vars'
+
+@media only screen and (min-width : 992px)
+  .header
+    &__title,&__subtitle
+      font-size: 72px
+    &__bottomLabel
+      font-size: 18px
+  .about
+    &__title
+      font-size: 86.4px
+    &__subtitle
+      font-size: 20px
+  .career
+    &__title
+      font-size: 86.4px
+    &__subtitle
+      font-size: 20px
+  .footer
+    &__smallFont
+      font-size: 1vw
+
+
+@media only screen and (max-width : 992px)
+  .header
+    &__title,&__subtitle
+      font-size: 7vw
+    &__bottomLabel
+      font-size: 1.8vw
+  .about
+    &__title
+      font-size: 8.7vw
+    &__subtitle
+      font-size: 2vw
+  .career
+    &__title
+      font-size: 7vw
+    &__subtitle
+      font-size: 20px
+  .footer
+    &__smallFont
+      font-size: 1.5vw
+
+
+//@media only screen and (max-width : 768px)
+//
+
+@media only screen and (min-width : 576px)
+  
+  .header
+    height: 63.7vw
+    padding: 4.6vw 11vw  0 11vw
+    &__logo
+      background: url("../img/group-4.svg")no-repeat
+      height: 46.8px
+      width: 100%
+      background-size: 17vw
+    &__bottomLabel
+      bottom: 4vw
+    &__imgWrap
+      position: absolute
+      height: 100%
+      &-pink
+        width: 12.4vw
+        top: 6.56vw
+        left: 0
+      &-green
+        width: 54.5vw
+        top: 6vw
+        right: 7vw
+        z-index: 1
+      &-purple
+        top: -15vw
+        right: 0
+        width: 14vw
+    &__img
+      &-pink
+        background: url("../img/pink-jacket-lady.svg")no-repeat
+        background-size: 100% 100%
+        width: 100%
+        height: 100%
+      &-green
+        background: url("../img/green-pants-man.svg")no-repeat
+        background-size: 100% 100%
+        width: 100%
+        height: 100%
+      &-purple
+        background: url("../img/purple-skirt-lady.svg")no-repeat
+        background-size: 100% 100%
+        width: 100%
+        height: 100%
+  .about
+    &__title
+      margin-top: 11.4vw
+      line-height: 1.09
+    &__subtitle
+      line-height: 1.5
+      padding-left: 28.6vw
+      padding-right: 28.6vw
+    &__sliderWrap
+      justify-content: flex-end
+      padding-left: 0
+    &__sliderWrapBlock
+      flex-direction: column
+    &__sliderCardWrap
+      &-first
+        height: 25.5vw
+        width: 21.2vw
+      &-second
+        height: 21.7vw
+        width: 17.5vw
+      &-third
+        height: 19.2vw
+        width: 17.8vw
+      &-fourth
+        height: 24.4vw
+        width: 21.2vw
+      &-fifth
+        height: 20vw
+        width: 14.2vw
+      &-sixth
+        height: 19.4vw
+        width: 17.8vw
+      &-seventh
+        height: 17.5vw
+        width: 17.8vw
+      &-eighth
+        height: 24.5vw
+        width: 21vw
+        margin-right: 0
+  .career
+    flex-direction: row
+    &__infoWrap
+      padding-left: 11vw
+      padding-top: 13vw
+      padding-bottom: 7vw
+    &__imgWrap
+      margin-top: 12vw
+      padding-bottom: 7vw
+    &__subtitle
+      width: 37vw
+    &__button
+      padding: 0.75vw 2.6vw
+      font-size: 20px
+      &-labelMobile
+        display: none
+      &-labelLarge
+        display: block
+  .footer
+    padding: 10vw 18.2vw 4vw 11vw
+    &__textWrap
+      flex-direction: row
+    &__title
+      font-size: 4vw
+    &__subtitle
+      &-small
+        margin: 2.4vw 0 0 0
+        font-size: 1.3vw
+      &-larger
+        margin-top: 1.4vw
+        font-size: 2.35vw
+    &__contactsWrap
+      margin-top: 3vw
+    &__smallFont
+      &-contact
+        margin-left: 1vw
+      &-rights
+        margin-top: 7.5vw
+    &__contactPhoneIcon
+      margin-top: 2vw
+    &__iconsWrap
+      margin-top: 4vw
+    &__icon
+      font-size: 1.5vw
+      margin-right: 1.7vw
+
+  #container
+    height: 47vw
+    margin-top: 7.5vw
+  .back-face
+    font-size: 1.5vw
+
+
+
+@media only screen and (max-width : 576px)
+  .blackImg
+    display: none
+
+  .header
+    height: auto
+    padding: 12vw 7.2vw 14vw  7.2vw
+    &__logo
+      background: url("../img/group-4m.svg")no-repeat
+      height: 25px
+      width: 100%
+      margin-bottom: 89.5vw
+    &__title,&__subtitle
+      font-size: 36px
+      margin-left: 12vw
+    &__subtitle
+      margin-left: 28vw
+    &__bottomLabel
+      font-size: 18px
+      margin-top: 16vw
+      position: relative
+    &__imgWrap
+      position: absolute
+      height: 100%
+      &-pink
+        width: 22vw
+        top: -30vw
+        left: 0
+      &-green
+        width: 63.5vw
+        top: -15vw
+        right: -4.5vw
+    &__img
+      &-pink
+        background: url("../img/pink-jacket-lady.svg")no-repeat
+        background-size: 100% 100%
+        width: 100%
+        height: 100%
+      &-green
+        background: url("../img/green-pants-man.svg")no-repeat
+        background-size: 100% 100%
+        width: 100%
+        height: 100%
+      &-purple
+        background: none
+  .about
+    &__title
+      margin-top: 37vw
+      font-size: 30px
+      line-height: 1.26
+    &__subtitle
+      font-size: 16px
+      line-height: 1.25
+      padding-left: 8vw
+      padding-right: 8vw
+    &__sliderWrap
+      justify-content: center
+      padding-left: 11vw
+    &__sliderWrapBlock
+      flex-direction: row
+    &__sliderCardWrap
+      width: 275px
+      height: 329px
+      margin: 0 2.8vw 0 0
+
+  .career
+    flex-direction: column-reverse
+    &__infoWrap
+      padding: 3vw 6vw 35vw
+    &__imgWrap
+      margin-top: 36vw
+    &__title
+      font-size: 51.8px
+      width: 100% 
+    &__subtitle
+      font-size: 17.3px
+    &__button
+      padding: 1.8vw 2.3vw
+      font-size: 12px
+      &-labelMobile
+        display: block
+      &-labelLarge
+        display: none
+  .footer
+    padding: 11.5vw 20vw 12vw 8vw
+    &__textWrap
+      flex-direction: column
+    &__title
+      font-size: 30px
+    &__subtitle
+      &-small
+        margin: 12vw 0 0 0
+        font-size: 16px
+      &-larger
+        margin-top: 0
+        font-size: 19px
+    &__contactsWrap
+      margin-top: 54vw
+    &__smallFont
+      font-size: 14.4px
+      &-contact
+        margin-left: 2.8vw
+      &-rights
+        margin-top: 16.4vw
+        font-size: 12px
+    &__contactPhoneIcon
+      margin-top: 3.3vw
+    &__iconsWrap
+      margin-top: 13.5vw
+    &__icon 
+      font-size: 18px
+      margin-right: 6.5vw
+  #container
+    height: 88vw
+    margin-top: 20vw
+  .back-face
+    font-size: 3.5vw
+
+  .arrow:before
+    content: ""
+    width: 2px
+    height: 14vw
+    background: aqua
+    position: absolute
+    top: 0
+    right: 22px
+    transition: all 0.3s ease
+
+  .arrow:after
+    content: ""
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 5px 0 5px 5px
+    border-color: transparent transparent transparent aqua
+    position: absolute
+    top: 12.7vw
+    right: 20.2px
+    transition: all 0.3s ease
+    transform: rotate(90deg)
+
+@media only screen and (max-width : 320px)
+	/**/

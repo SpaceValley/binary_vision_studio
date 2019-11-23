@@ -1,0 +1,307 @@
+@import './libs'
+@import './vars'
+@import "./fonts"
+
+body, html
+  overflow-x: hidden
+  
+.header
+  background: $dark-blue-gray
+  width: 100%
+  position: relative
+
+  &__wrapTopBar
+    display: flex
+    justify-content: space-between
+  &__menuWrap
+    cursor: pointer
+  &__menuLine
+    background: white
+    margin-bottom: 5px
+    height: 3px
+  &__img
+    width: 100%
+    height: auto
+  &__title
+    font-family: $poppins
+    font-size: 72px
+    font-weight: 200
+    color: #ffe600
+    margin-top: 9.2vw
+    margin-left: -5vw
+    margin-bottom: 0
+  &__subtitle
+    font-family: $mont
+    font-size: 72px
+    font-weight: bold
+    color: white
+    margin-left: 1vw
+    margin-top: 1vw
+    position: relative
+    z-index: 2
+  &__bottomLabel
+    font-family: $poppins
+    font-weight: 300
+    color: #f7f6f3
+    position: absolute
+    margin-bottom: 0
+    text-decoration: none
+    cursor: pointer
+  &__bottomLabel:hover, &__bottomLabel:active
+    color: #00ffd2
+
+
+.header__menuLine-first
+  width: 50px
+.header__menuLine-second
+  width: 42px
+.header__menuLine-third
+  width: 34px
+
+.about
+  &__title
+    font-family: $mont
+    font-weight: bold
+    text-align: center
+    color: #191847
+    margin-bottom: 0
+
+  &__subtitle
+    font-family: $poppins
+    font-weight: 300
+    color: #191847
+    text-align: center
+    margin-top: 1vw
+  &__sliderWrap
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+
+  &__sliderWrapBlock
+    display: flex
+    justify-content: center
+    align-items: center
+  &__sliderCardWrap
+    position: relative
+    &:hover 
+      box-shadow: 0 22px 89px rgba(0,0,0,0.5)
+      z-index: 200
+
+  &__sliderCard
+    perspective: 1000px
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+  &__row
+    display: flex
+    flex-direction: row
+    &-first
+      align-items: flex-end
+    &-second
+      align-items: flex-start
+  &__img
+    background: #0e1529
+    width: 100%
+    height: auto
+
+.career
+  display: flex
+  span
+    display: inline-block
+    min-width: 20px
+  &__infoWrap
+  &__title
+    font-family: $mont
+    font-weight: bold
+    line-height: 1.03
+    color: #191847
+    margin: 0
+    transition: all 3s
+    width: 44vw
+    font-size: 7vw
+    &-italic
+      font-style: italic
+      margin: 0
+      width: 100%
+  &__subtitle
+    font-family: $poppins, sans-serif
+    color: #191847
+    font-weight: 300
+  &__button
+    font-family: $poppins
+    font-weight: 200
+    text-align: center
+    color: white
+    border: none
+    border-radius: 5.8px
+    background: $dark-blue-gray
+    cursor: pointer
+    transition: background-color color .5s linear
+  &__img
+    width: 100%
+    height: auto
+    padding: 0
+
+.footer
+  background: $dark-blue-gray
+  width: 100%
+  display: flex
+  flex-direction: column
+  &__textWrap
+    display: flex
+    justify-content: space-between
+  &__subtitleWrap
+    display: flex
+    flex-direction: column
+  &__title, &__subtitle, &__smallFont
+    font-family: $poppins
+    font-weight: 200
+    color: white
+    &-small
+    &-larger
+      line-height: 1.3
+      opacity: 0.8
+  &__title
+    margin: 0
+    line-height: 1.4
+  &__smallFont
+    font-weight: bold
+    &-contact
+      font-weight: 200
+    &-rights
+      margin-bottom: 0
+      font-weight: 200
+  &__contactPhoneIcon
+    transform: rotate(90deg)
+  &__icon
+    color: white
+    cursor: pointer
+
+
+#container
+  width: 100%
+  overflow: visible
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+
+
+
+#thumbs
+  position: absolute
+  height: 100%
+  width: auto
+
+.about__sliderCardInner
+  margin: .5vw
+  position: relative
+  width: 100%
+  height: 100%
+  text-align: center
+  transition: all 1s
+  &-imgLeaf
+    height: auto
+    width: 63px
+    
+  &-title
+    font-size: 20px
+    line-height: 20px
+    font-weight: 500
+    color: #26a5ff
+  &-subtitle
+    font-size: 16px
+    color: #0e1529
+
+.about__sliderCard:hover .about__sliderCardInner
+  .front-face
+    opacity: 0
+  .back-face
+    opacity: 1
+
+.front-face
+  z-index: 2
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  backface-visibility: hidden
+  opacity:  1
+
+.back-face
+  padding: 2vw
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  background-color: white
+  z-index: 1
+  opacity: 0
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  backface-visibility: hidden
+  transition: all 0.5s
+
+
+
+.arrowWrap
+  position: absolute
+  left: 20%
+  top: 96%
+  height: 2vw
+
+
+.arrow::before
+  content: ""
+  width: 1px
+  height: 7vw
+  background:  #00ffd2
+  position: absolute
+  top: 0
+  right: 22px
+  transition: all 1s ease
+
+.arrow::after
+  content: ""
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 3px 0 3px 4px
+  border-color: transparent transparent transparent  #00ffd2
+  position: absolute
+  top: 6.7vw
+  right: 20.2px
+  transition: all 1s ease
+  transform: rotate(90deg)
+
+.header__bottomLabel 
+  transition: all .25s linear
+
+#mobile-slider
+  display: none
+  
+.blackImg
+  min-width: 30vw  
+
+@import './media'
+
+.arrowWrapper:hover .arrow::before
+  height: 11vw
+.arrowWrapper:hover .arrow::after
+  top: 10.7vw
+#thumbs
+  overflow: auto
+  width: 100%
+  height: auto
+  padding: 0
+  
+
+.sliderWrap
+  display: flex
+  padding: 35px 0 70px 0
+
+  
